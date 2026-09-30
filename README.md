@@ -1,29 +1,23 @@
-# Restaurant-Kitchen-Staff-Financial-Management-System
-Key Features
-Kitchen Pantry Management (set): Track current raw ingredient inventory. Uses Python sets to automatically enforce uniqueness and prevent duplicate entries.
+ Restaurant Kitchen, Staff & Financial Management System
 
-Smart Recipe Matcher (set & list): Check recipe feasibility using set subset operations. If any ingredients are missing, they are automatically queued into an organized shopping list.
+ Overview of the Project
+The Restaurant Kitchen, Staff & Financial Management System is an integrated, console-based Python application built to streamline operations for small-scale food service businesses like cafes and cloud kitchens. It solves everyday administrative challenges by consolidating inventory tracking, recipe verification, employee payroll processing, and financial expense budgeting into a single interactive tool. The project relies entirely on native Python data structures (lists, sets, and dictionaries) without requiring external databases or third-party libraries.
 
-Budget & Expense Tracking (list & dict): Checkout shopping lists, log procurement costs, and continuously monitor expenses against a global budget ceiling with built-in over-budget warnings.
+Features
+Kitchen Pantry Management (`set`):Dynamically view and restock raw ingredients. Uses Python sets to automatically eliminate duplicate entries and ensure inventory accuracy.
+Smart Recipe Matcher (`set` & `list`): Check menu item availability using mathematical set subset operations. Missing ingredients are automatically identified and pushed into a structured shopping list.
+Budget & Expense Tracking (`list` & `dict`): Review shopping lists, execute procurement checkouts, log expenses, and monitor spending against a predefined budget ceiling with built-in warning alerts.
+Staff & Payroll Management (`dict`): Register employee profiles with unique identification codes, calculate net monthly compensation (factoring in bonuses and deductions), and automatically sync payouts into the financial expense ledger.
 
-Staff & Payroll Management (dict): Register staff profiles with unique identification keys, compute net monthly salaries (factoring in bonuses and deductions), and seamlessly sync payouts into the financial expense ledger.
+ Technologies/Tools Used
+Programming Language:Python 3.x
+Core Data Structures: Dictionaries, Sets, Lists
+Development Environment: Any standard text editor or IDE (VS Code, PyCharm, IDLE) and terminal/command prompt.
 
-
-Project Structure
-The project is combined into a single, easy-to-run script or can be separated into functional modules:
-
-manage_pantry() - Handles inventory updates.
-
-check_cookable_recipes() - Performs set-based recipe matching and shopping list generation.
-
-view_shopping_list_and_buy() - Manages procurement checkout and budget limits.
-
-process_payroll() - Computes staff compensation and logs financial outflows.
-
-main() - Provides the interactive control dashboard loop.
-
-
-
-
- Academic Context
-Developed as part of a foundational programming project focusing on practical algorithmic logic and data structure implementation.
+ Steps to Install & Run the Project
+1. Download or clone this repository to your local computer.
+2. Ensure you have Python installed on your system (`python --version`).
+3. Save the Python script (e.g., `restaurant_system.py`) into your project folder.
+4. Open your terminal or command prompt, navigate to the folder containing the script, and run the following command:
+   ```bash
+   python restaurant_system.py
